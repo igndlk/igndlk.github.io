@@ -1,0 +1,81 @@
+.contact-us{
+    min-height: calc(100vh - 100px);
+    background: #030012;
+}
+.contact-us .main-title{
+    padding-top: 200px;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us .main-title p{
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 700;
+    color: #828282;
+    border-bottom: 3px solid #4b4b4b;
+    text-align: center;
+}
+.contact-us .desc{
+    padding-bottom: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us .desc p{
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: #404040cf;
+    text-align: center;
+}
+.contact-us .contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.contact-us .contacts a{
+    display: flex;
+    align-items: center;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    color: #a0a0a0cf;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+.contact-us .contacts a:hover, .contact-us .socials a:hover ion-icon{
+    color: #ff0000;
+    transition: color 0.3s ease;
+}
+
+.contact-us .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.contact-us ion-icon{
+    color: #b5b2b2;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+@media (max-width:420px){
+    .team .desc{
+        width: 80%;
+    }
+}

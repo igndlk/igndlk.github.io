@@ -1,0 +1,201 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+::selection{
+    background: transparent;
+    color: #ff0000;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 11px;
+}
+::-webkit-scrollbar-track {
+    background:  #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+
+/* navigation */
+#navigation{
+    transition: all 0.3s ease;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    /* background: transparent; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    z-index: 109;
+}
+.navigation .navigation-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.navigation .navigation-header a{
+    font-family: Oswald;
+    font-size: 30px;
+    text-decoration: none;
+    color: #b0aaaa;
+    padding: 0 40px;
+}
+.navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 40px;
+}
+.navigation .res-menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.navigation ul li{
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 5px 10px;
+    color: #fff;
+    /* cursor: pointer; */
+}
+.navigation ul .active{
+    border-bottom: 3px solid #fff;
+}
+.navigation ul li a{
+    text-decoration: none;
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Raleway, sans-serif;
+}
+#menu-check{
+    display: none;
+}
+.menu-btn{
+    display: none;
+}
+
+/*Products*/
+.buy-btn{
+    text-decoration: none;
+    background: #160549;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buy-btn:hover{
+    background: rgb(1, 0, 33);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+/*Footer*/
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+footer .rights{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .rights p{
+    margin: 0;
+}
+
+@media (max-width: 1024px){
+    .res-menu{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        top: -100vh;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 105;
+        background: #000;
+        transition: all 0.5s ease;
+    }
+    .navigation ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navigation ul li{
+        margin: 30px 0;
+    }
+    .menu-btn{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        bottom: 20px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        z-index: 999;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .menu-btn span{
+        width: 25px;
+        height: 4px;
+        border-radius: 999px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+    }
+    #menu-check:checked ~ .menu-btn span:nth-of-type(1){
+        transform: rotate(45deg) translate(5px, 7px);
+        transform-origin: center;
+        transition: all 0.3s ease,transform-origin 0s;
+    }
+    #menu-check:checked ~ .menu-btn span:nth-of-type(2){
+        transform: translate(30px, 0px);
+        opacity: 0;
+    }
+    #menu-check:checked ~ .menu-btn span:nth-of-type(3){
+        transform: rotate(-45deg) translate(5px, -7px);
+        transform-origin: center;
+        transition: all 0.3s ease,transform-origin 0s;
+    }
+    #menu-check:checked ~ .navigation .res-menu{
+        transform: translateY(100vh);
+        transition: all 0.5s ease;
+    }
+}
+
+/* Page Content */
+#page-content{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessory Addictz | By IGND</title>
+    <link rel="icon" type="icon/image" href="/images/logo.jpg">
+    <base href="/">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact-style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <section id="nav-bar">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navigation" id="navigation">
+            <div class="navigation-header">
+                <a class="navbar-brand" href="/index.html">Accessory Addictz By IGND</a>
+            </div>
+            <div class="res-menu">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="products.html">Products</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="page-content">
+
+        <div class="contact-us">
+            <div class="main-title">
+                <p>Contact Us</p>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque id nibh tortor id aliquet. Vitae suscipit tellus mauris a diam. Eget gravida cum sociis natoque penatibus et magnis. Vestibulum morbi blandit cursus risus at ultrices.</p>
+            </div>
+            <div class="contacts">
+                <a href="Tel: 94768544722"><ion-icon name="call-outline"></ion-icon>+94 768544722</a>
+                <a href="mailto:ignd.grouplk@gmail.com"><ion-icon name="mail-outline"></ion-icon>ignd.grouplk@gmail.com</a>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/accessory.addictz/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.facebook.com/accessory.addictz"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://wa.me/94768544722?text=Hi%20I%20would%20like%20to%20inquire%20about%20your%20product"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+        </div>
+        <footer>
+            <div class="rights">
+                <p class="copyrights">&copy; 2022 IGND. All rights reserved.</p>
+            </div>
+            
+            <!-- Made by Thinal Perera | dexow.github.io | dexow5000@gmail.com -->
+        </footer>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($("#navigation").offset().top > 50) {
+                $("#navigation").attr("style", "background-color: rgb(8, 5, 22);");
+            } else {
+                $("#navigation").attr("style", "background-color: transparent;");
+            }
+        });
+    </script>
+</body>
+
+</html>

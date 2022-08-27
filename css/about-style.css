@@ -1,0 +1,144 @@
+/* TEAM */
+.team{
+    height: auto;
+    background: #100f18;
+}
+.team .main-title{
+    padding-top: 200px;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team .main-title p{
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ababab;
+    border-bottom: 3px solid #6d6d6d;
+    text-align: center;
+}
+.team .desc{
+    margin-bottom: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team .desc p{
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6f6f6fcf;
+    text-align: center;
+}
+.team .members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100%;
+    margin: 0 20px;
+    padding: 0 0 50px;
+}
+.team .frame{
+    background-color: #000;
+    width: 250px;
+    padding: 40px 10px;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team .frame img{
+    width: 150px;
+    border-radius: 50%;
+    height: auto;
+}
+.team .frame .details{
+    padding: 20px 0 0;
+    text-align: center;
+}
+.team .frame .details .name{
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.team .frame .details .desc{
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.follow-us{
+    height: 400px;
+    background: #030012;
+}
+.follow-us .main-title{
+    padding-top: 100px;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow-us .main-title p{
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 700;
+    color: #4b4b4b;
+    border-bottom: 3px solid #4b4b4b;
+    text-align: center;
+}
+.follow-us .desc{
+    padding-bottom: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow-us .desc p{
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: #404040cf;
+    text-align: center;
+}
+
+.follow-us .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.follow-us .socials a:hover ion-icon{
+    color: #ff0000;
+    transition: color 0.3s ease;
+}
+.follow-us .socials ion-icon{
+    color: #b5b2b2;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+@media (max-width:420px){
+    .team .desc{
+        width: 80%;
+    }
+}
